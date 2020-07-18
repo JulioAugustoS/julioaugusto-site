@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/27c72e3c-f7b8-4c29-8755-1b137771328b/deploy-status)](https://app.netlify.com/sites/julioaugusto/deploys)
+
 <h1 align="center">Julio Augusto Site</h1>
 
 <p align="center">
