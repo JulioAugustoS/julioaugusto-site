@@ -1,65 +1,68 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Julio Augusto - Mobile Software Engineer`,
+    name: `Julio Augusto`,
+    siteUrl: `https://julioaugusto.dev`,
+    description: `Technical Leader at @gok-dev - Developer Javascript - React, React Native, Vue, TypeScript, GraphQL, Redux, NodeJS`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: ``,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/Julio_Augusto_S`,
       },
       {
         name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://github.com/JulioAugustoS`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://instagram.com/julio.developer`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://www.linkedin.com/in/julio-augusto`,
       },
     ],
   },
   plugins: [
     {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
       resolve: "@narative/gatsby-theme-novela",
       options: {
-        contentPosts: "content/posts",
-        contentAuthors: "content/authors",
-        basePath: "/",
         authorsPage: true,
+        mailchimp: true,
         sources: {
-          local: true,
-          // contentful: true,
+          contentful: true,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://app.us10.list-manage.com/subscribe/post?u=6541a44696fe1447240ec4827&amp;id=0de8352533',
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `Julio Augusto`,
+        short_name: `JA Developer`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
       },
     },
   ],
