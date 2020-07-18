@@ -27,6 +27,10 @@ module.exports = {
         name: `linkedin`,
         url: `https://www.linkedin.com/in/julio-augusto`,
       },
+      {
+        name: `youtube`,
+        url: `https://www.youtube.com/channel/UCt6k57ufGtiyogtLUYNMfLA?view_as=subscriber`
+      }
     ],
   },
   plugins: [
