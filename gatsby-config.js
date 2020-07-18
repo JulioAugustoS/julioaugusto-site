@@ -30,6 +30,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -56,14 +57,28 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Julio Augusto`,
-        short_name: `JA Developer`,
+        name: `Julio Augusto - Mobile Software Engineer`,
+        short_name: `Julio Augusto`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#fff`,
+        theme_color: `#3498db`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#3498db`,
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://julioaugusto.dev`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };
