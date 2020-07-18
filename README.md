@@ -1,71 +1,66 @@
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg" alt="gatsby-novela-theme hero image" />
-</a>
+<h1 align="center">Julio Augusto Site</h1>
 
-<br/>
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=gatsby&message=framework&color=663399&style=for-the-badge&logo=GATSBY"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+<!--   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/> -->
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
-# Gatsby Starter Novela
+Este projeto foi criado utilizando Gatsby, GraphQL e Contentful CMS.
 
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
+### Technology stack
 
-Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
+| Tecnologia   | Versão   |
+| ------------ | -------- |
+| react        | 16.12.0  |
+| gatsby       | 2.22.15  |
 
-<div>
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
-</a>
-</div>
+### Pré-requisitos
 
-<div>
-<a href="https://www.narative.co/design/open/novela" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
-</a>
-</div>
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Contentful](https://app.contentful.com/)
+- [Yarn](https://yarnpkg.com/en/docs/install)
 
-# Using Gatsby Starter Novela
+## Como rodar a aplicação :arrow_forward:
 
-This guide will take you through setting up Novela with Gatsby Starter Novela.
+Clone o repositório usando:
 
-### Step 1: Starter installation
-
-##### With `gatsby-cli`:
-
-```sh
-gatsby new novela-site https://github.com/narative/gatsby-starter-novela
+```
+$ git clone git@github.com:JulioAugustoS/julioaugusto-site.git
 ```
 
-##### With `git clone`:
+## Intalar Dependencias
 
-```sh
-git clone git@github.com:narative/gatsby-starter-novela.git novela-site
+Acesse a pasta do projeto e instale as dependencias utilizando o comando abaixo:
 
-cd novela-site
-
-yarn
+```
+$ yarn install
 ```
 
-### Step 2: Develop & Build
+## Scripts Disponiveis
 
-Once installed or cloned locally and all packages are installed you can begin developing your site.
+No diretório do projeto para rodar em modo de desenvolvimento você pode executar:
 
-```sh
-# Run localhost
-yarn dev
-
-# Build your Gatsby site
-yarn build
+```
+$ yarn dev
 ```
 
-If wanting to use Netlify CMS as the content editor, then you need to be run the proxy in another terminal tab. Then visit
-http://localhost:8000/admin to view the editor.
-```sh
-# Run proxy
-yarn proxy
+Para fazer o build do projeto e rodar em modo Release execute:
+
+```
+$ yarn build && yarn serve
 ```
 
-### Help
+### Desenvolvedores
 
-If you don't have *yarn* installed follow the [yarn getting started guide](https://classic.yarnpkg.com/en/docs/getting-started) 
+| [<img src="https://avatars0.githubusercontent.com/u/39813875?s=460&v=4" width=115 > <br> <sub> Julio Augusto </sub>](https://github.com/JulioAugustoS)
+| :---:
 
-For more information visit the [Theme repository](https://github.com/narative/gatsby-theme-novela)
+## Licença 
 
+The [MIT License]() (MIT)
+
+Copyright Julio Augusto 2020 - Site
